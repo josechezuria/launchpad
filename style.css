@@ -1,0 +1,152 @@
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.btn-style {
+    padding: 50px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: black;
+    border: solid black 3px;
+    border-radius: 5px;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.btn-style:hover {
+  background-color: #3b82f6; /* Bright blue */
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 120px);
+    grid-template-columns: repeat(4,120px);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+
+@media (max-width:768px) {
+    .flex {
+        height: 120vh;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: repeat(3, 80px);
+    }
+    
+    .btn-style {
+        padding: 30px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .m {
+       margin-left: 155%;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        margin-top: 10vh;
+        font-family: "Inter", serif;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:425px) {
+    .container {
+        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: repeat(3, 80px);
+    }
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+.a {
+    background-color: #F9FC9A;
+}
+
+.s {
+    background-color: #C3C7D3;
+}
+
+.d {
+    background-color: #F9FC9A;
+}
+
+.f {
+    background-color: #37F6FE;
+}
+
+.g {
+    background-color: #C3C7D3;
+}
+
+.h {
+    background-color: #F9FC9A;
+}
+
+.j {
+    background-color: #37F6FE;
+}
+
+.k {
+    background-color: #F9FC9A;
+}
+
+.l {
+    background-color: #37F6FE;
+}
+
+.z {
+    background-color: #FB9152;
+}
+
+.x {
+    background-color: #C3C7D3;
+}
+
+.c {
+    background-color: #37F6FE;
+}
+
+.v {
+    background-color: #FB9152;
+}
+
+.b {
+    background-color: #FB9152;
+}
+
+.n {
+    background-color: #37F6FE;
+}
+
+.m {
+    background-color: #FB9152;
+}
+
+.pressed {
+    transform: scale(1.1); /* Slightly increase the size */
+    box-shadow: 0 0 20px 5px rgba(59, 130, 246, 0.8); /* Add a glowing effect */
+    opacity: 0.8; /* Slightly transparent */
+    transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.1s ease; /* Smooth transitions */
+  }
